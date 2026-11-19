@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c36">
+  <meta name="description" content="Aplikasi pembelajaran Schenck MULTICOR K50 dan DISOCONT untuk pulverized coal feeding.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Coriolis Feeder Academy</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brandmark">CF</div><div><strong>Coriolis Feeder Academy</strong><small>Schenck MULTICOR K50 · DISOCONT</small></div></div>
+  <button id="installBtn" class="install hidden">Install PWA</button>
+</header>
+<main class="container">
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow">LEARNING ACADEMY · V1.0</span>
+      <h1>Pelajari Coriolis Feeder dari dasar sampai troubleshooting.</h1>
+      <p>Materi bertahap untuk memahami pulverized coal feeding, pengukuran mass flow, sistem pneumatic, electrical, DISOCONT, PLC/DCS, kalibrasi, dan preventive maintenance.</p>
+      <div class="hero-tags"><span>10 modul</span><span>Quiz per modul</span><span>Offline-ready</span></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="wheel"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="art-label">MASS FLOW<br><b>CORIOLIS</b></div></div>
+  </section>
+
+  <section class="stats">
+    <article class="stat"><span>Progress</span><strong id="progressText">0 / 10</strong><div class="progress"><i id="progressBar"></i></div></article>
+    <article class="stat"><span>Modul selesai</span><strong id="doneCount">0</strong></article>
+    <article class="stat"><span>Jawaban benar</span><strong id="scoreCount">0 / 10</strong></article>
+  </section>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="section-head"><h2>Roadmap belajar</h2><span class="muted">10 modul</span></div>
+      <nav id="moduleNav" class="module-nav" aria-label="Daftar modul"></nav>
+      <div class="side-note"><b>Catatan lapangan</b><p>Gunakan manual yang cocok dengan model, serial number, dan revisi unit. Jangan mengubah parameter atau melakukan bypass proteksi hanya berdasarkan materi belajar.</p></div>
+    </aside>
+
+    <section class="lesson-panel" aria-live="polite">
+      <div class="lesson-meta"><span id="moduleNumber" class="pill">MODUL 1 / 10</span><span id="moduleTag" class="muted">Dasar sistem</span></div>
+      <h2 id="moduleTitle">System Overview</h2>
+      <h3>Tujuan pembelajaran</h3><p id="moduleGoal"></p>
+      <div class="lesson-box"><h3>Materi teknis</h3><p id="moduleLesson"></p></div>
+      <h3>Pokok pembahasan</h3><ul id="pointList" class="point-list"></ul>
+      <div class="field-box"><div class="field-icon">⌁</div><div><b>Praktik lapangan</b><p id="fieldTask"></p></div></div>
+      <section class="quiz">
+        <div class="quiz-head"><div><span class="eyebrow">UJI PEMAHAMAN</span><h3 id="question"></h3></div><span class="quiz-mark">?</span></div>
+        <div id="options" class="options"></div>
+        <button id="checkBtn" class="primary" disabled>Periksa jawaban</button>
+        <div id="feedback" class="feedback hidden" role="status"></div>
+      </section>
+      <div class="lesson-actions">
+        <button id="prevBtn" class="secondary">← Sebelumnya</button>
+        <label class="complete-label"><input type="checkbox" id="completeCheck"> Tandai modul selesai</label>
+        <button id="nextBtn" class="primary">Berikutnya →</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="reference">
+    <h2>Referensi & batas penggunaan</h2>
+    <div class="reference-grid">
+      <div><b>Dokumen pengguna</b><p><i>Applying Coriolis</i>, Kevin C. Boyle, International Cement Review, Februari 2003. Menjelaskan prinsip Coriolis, torque, mass flow, aplikasi cement plant, dan hasil pengujian yang dilaporkan dalam artikel.</p></div>
+      <div><b>Data spesifik unit</b><p>Terminal, parameter DISOCONT generasi lama, wiring, batas operasi, prosedur kalibrasi, serta spesifikasi K50 harus diverifikasi melalui manual asli dan data nameplate unit.</p></div>
+    </div>
+    <button id="resetBtn" class="text-button">Reset seluruh progress</button>
+  </section>
+  <footer>Versi 1.0 · Aplikasi belajar mandiri · Progress disimpan pada perangkat ini.</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
