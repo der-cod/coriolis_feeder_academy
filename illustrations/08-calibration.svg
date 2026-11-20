@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1230 360" role="img" aria-labelledby="t d">
+<title id="t">Calibration</title><desc id="d">Urutan pembelajaran kalibrasi; ikuti prosedur resmi unit</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#edf6f2"/><stop offset="1" stop-color="#f8faf8"/></linearGradient></defs>
+<rect width="1230" height="360" rx="22" fill="url(#bg)"/>
+<text x="36" y="58" class="head">CALIBRATION</text>
+<text x="36" y="91" class="desc">Urutan pembelajaran kalibrasi; ikuti prosedur resmi unit</text>
+
+        <rect x="36" y="150" width="190" height="112" rx="16" fill="#ffffff" stroke="#9db9ae" stroke-width="2"/>
+        <rect x="36" y="150" width="190" height="12" rx="6" fill="#1f6658"/>
+        <text x="131" y="198" text-anchor="middle" class="label">PRE-CHECK</text>
+        <text x="131" y="228" text-anchor="middle" class="sub">Isolasi & inspeksi</text><path d="M 230 206 H 268" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M 258 196 L 270 206 L 258 216" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="276" y="150" width="190" height="112" rx="16" fill="#ffffff" stroke="#9db9ae" stroke-width="2"/>
+        <rect x="276" y="150" width="190" height="12" rx="6" fill="#1f6658"/>
+        <text x="371" y="198" text-anchor="middle" class="label">REFERENCE</text>
+        <text x="371" y="228" text-anchor="middle" class="sub">Metode referensi</text><path d="M 470 206 H 508" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M 498 196 L 510 206 L 498 216" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="516" y="150" width="190" height="112" rx="16" fill="#ffffff" stroke="#9db9ae" stroke-width="2"/>
+        <rect x="516" y="150" width="190" height="12" rx="6" fill="#1f6658"/>
+        <text x="611" y="198" text-anchor="middle" class="label">TEST RUN</text>
+        <text x="611" y="228" text-anchor="middle" class="sub">Operasi terkendali</text><path d="M 710 206 H 748" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M 738 196 L 750 206 L 738 216" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="756" y="150" width="190" height="112" rx="16" fill="#ffffff" stroke="#9db9ae" stroke-width="2"/>
+        <rect x="756" y="150" width="190" height="12" rx="6" fill="#1f6658"/>
+        <text x="851" y="198" text-anchor="middle" class="label">COMPARE</text>
+        <text x="851" y="228" text-anchor="middle" class="sub">Bandingkan hasil</text><path d="M 950 206 H 988" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M 978 196 L 990 206 L 978 216" stroke="#d88939" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="996" y="150" width="190" height="112" rx="16" fill="#ffffff" stroke="#9db9ae" stroke-width="2"/>
+        <rect x="996" y="150" width="190" height="12" rx="6" fill="#1f6658"/>
+        <text x="1091" y="198" text-anchor="middle" class="label">DOCUMENT</text>
+        <text x="1091" y="228" text-anchor="middle" class="sub">Catat & verifikasi</text>
+<path d="M 36 302 H 1190" stroke="#c8d9d1" stroke-width="2" stroke-dasharray="7 8"/>
+<text x="36" y="333" class="foot">ILUSTRASI KONSEP PEMBELAJARAN • VERIFIKASI KONFIGURASI DENGAN MANUAL UNIT</text>
+<style>
+.head{font:800 25px Arial,sans-serif;fill:#123c36;letter-spacing:1px}
+.desc{font:15px Arial,sans-serif;fill:#526b63}
+.label{font:700 16px Arial,sans-serif;fill:#163c35}
+.sub{font:14px Arial,sans-serif;fill:#61766e}
+.foot{font:700 11px Arial,sans-serif;fill:#758981;letter-spacing:1px}
+</style></svg>

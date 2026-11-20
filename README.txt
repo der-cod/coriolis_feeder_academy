@@ -1,21 +1,20 @@
-CORIOLIS FEEDER ACADEMY PWA v1.0
+CORIOLIS FEEDER ACADEMY PWA v1.1
+Schenck MULTICOR K50 · DISOCONT generasi lama · Pulverized coal
 
-Isi:
-- index.html: aplikasi
-- styles.css: tampilan responsif
-- app.js: navigasi, quiz, progress lokal, install prompt
-- modules.json: 10 modul pembelajaran
-- manifest.webmanifest: identitas PWA
-- sw.js: service worker dan cache offline
-- icons/: ikon aplikasi
+PEMBARUAN
+- 10 ilustrasi teknis SVG, satu untuk setiap modul.
+- Gambar responsif dan dapat diperbesar.
+- Materi modul ditanam langsung di app.js agar tidak gagal saat index.html dibuka langsung.
+- Kuis dan progress lokal tetap dipertahankan (kunci penyimpanan versi lama tetap sama).
+- Cache service worker diperbarui untuk v1.1.
 
-Cara menjalankan:
+MENJALANKAN
 1. Ekstrak ZIP.
-2. Jalankan melalui web server lokal atau hosting HTTPS (PWA/service worker tidak aktif bila index.html dibuka langsung dengan file://).
-3. Untuk uji lokal dengan Python: buka terminal di folder hasil ekstrak, lalu jalankan:
-   python -m http.server 8000
-4. Buka http://localhost:8000
-5. Di Chrome/Edge, gunakan tombol Install PWA bila tersedia atau menu Install app.
+2. Cara paling mudah: buka index.html di browser modern. Materi teks sudah tertanam di app.js; ilustrasi SVG dibaca dari folder illustrations.
+3. Untuk fitur PWA/offline penuh, jalankan server lokal:
+   Windows: buka terminal di folder hasil ekstrak, jalankan: python -m http.server 8000
+   Lalu buka http://localhost:8000
+4. Untuk instalasi PWA, gunakan localhost atau HTTPS lalu pilih Install PWA.
 
-Progress quiz disimpan pada localStorage browser/perangkat yang digunakan.
-Aplikasi v1.0 tidak mengandung terminal wiring atau parameter DISOCONT yang belum diverifikasi.
+CATATAN TEKNIS
+Seluruh diagram adalah ilustrasi prinsip kerja dan alur konseptual, bukan gambar fabrikasi atau wiring resmi Schenck. Susunan komponen, terminal, parameter DISOCONT, setpoint, batas operasi, dan prosedur kalibrasi harus diverifikasi dengan manual yang sesuai model, serial number, dan revisi unit.

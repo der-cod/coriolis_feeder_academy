@@ -19,7 +19,9 @@
       "Mengatur tekanan udara compressor"
     ],
     "correct": 0,
-    "explain": "MULTICOR menggunakan prinsip Coriolis untuk mengukur mass flow material."
+    "explain": "MULTICOR menggunakan prinsip Coriolis untuk mengukur mass flow material.",
+    "illustration": "illustrations/01-system-overview.svg",
+    "illustration_alt": "Alur material pulverized coal dan hubungan kontrol"
   },
   {
     "title": "Mechanical Construction",
@@ -42,7 +44,9 @@
       "Mengukur tekanan pneumatic"
     ],
     "correct": 1,
-    "explain": "Guide vanes membantu mempercepat material dalam arah circumferential pada measuring wheel."
+    "explain": "Guide vanes membantu mempercepat material dalam arah circumferential pada measuring wheel.",
+    "illustration": "illustrations/02-mechanical.svg",
+    "illustration_alt": "Skema konsep komponen mekanis; susunan aktual diverifikasi dari manual K50"
   },
   {
     "title": "Coriolis Measurement",
@@ -65,7 +69,9 @@
       "Tekanan outlet saja"
     ],
     "correct": 0,
-    "explain": "Reaction torque berbanding lurus dengan mass flow ketika angular velocity dan radius pengukuran diketahui."
+    "explain": "Reaction torque berbanding lurus dengan mass flow ketika angular velocity dan radius pengukuran diketahui.",
+    "illustration": "illustrations/03-coriolis.svg",
+    "illustration_alt": "Hubungan konseptual aliran partikel, gaya Coriolis, dan reaction torque"
   },
   {
     "title": "Pneumatic System",
@@ -88,7 +94,9 @@
       "Karena udara hanya digunakan untuk motor"
     ],
     "correct": 1,
-    "explain": "Sealing, flushing, fluidization dan conveying mempunyai fungsi berbeda."
+    "explain": "Sealing, flushing, fluidization dan conveying mempunyai fungsi berbeda.",
+    "illustration": "illustrations/04-pneumatic.svg",
+    "illustration_alt": "Jalur pneumatik digambarkan terpisah berdasarkan fungsi"
   },
   {
     "title": "Electrical System",
@@ -111,7 +119,9 @@
       "Pre-feeder motor mengukur torque"
     ],
     "correct": 1,
-    "explain": "Kedua motor memiliki fungsi mekanis dan kontrol berbeda."
+    "explain": "Kedua motor memiliki fungsi mekanis dan kontrol berbeda.",
+    "illustration": "illustrations/05-electrical.svg",
+    "illustration_alt": "Contoh kelompok perangkat listrik dan instrumentasi"
   },
   {
     "title": "DISOCONT Architecture",
@@ -134,7 +144,9 @@
       "Menaikkan speed motor"
     ],
     "correct": 1,
-    "explain": "Parameter harus sesuai tipe dan versi hardware/software yang terpasang."
+    "explain": "Parameter harus sesuai tipe dan versi hardware/software yang terpasang.",
+    "illustration": "illustrations/06-disocont.svg",
+    "illustration_alt": "Diagram blok fungsi controller; bukan diagram terminal atau wiring"
   },
   {
     "title": "PLC / DCS Integration",
@@ -158,7 +170,9 @@
       "Actual adalah perintah motor"
     ],
     "correct": 0,
-    "explain": "Controller membandingkan nilai target dan hasil pengukuran."
+    "explain": "Controller membandingkan nilai target dan hasil pengukuran.",
+    "illustration": "illustrations/07-plc-dcs.svg",
+    "illustration_alt": "Pertukaran sinyal dua arah secara konseptual"
   },
   {
     "title": "Calibration",
@@ -181,7 +195,9 @@
       "Meningkatkan RPM motor"
     ],
     "correct": 1,
-    "explain": "Zero adjustment menetapkan referensi nol pengukuran, bukan memperbaiki semua masalah akurasi."
+    "explain": "Zero adjustment menetapkan referensi nol pengukuran, bukan memperbaiki semua masalah akurasi.",
+    "illustration": "illustrations/08-calibration.svg",
+    "illustration_alt": "Urutan pembelajaran kalibrasi; ikuti prosedur resmi unit"
   },
   {
     "title": "Troubleshooting",
@@ -204,7 +220,9 @@
       "Mengubah semua gain controller"
     ],
     "correct": 1,
-    "explain": "Kumpulkan bukti dan pisahkan gangguan material dari gangguan instrumentasi."
+    "explain": "Kumpulkan bukti dan pisahkan gangguan material dari gangguan instrumentasi.",
+    "illustration": "illustrations/09-troubleshooting.svg",
+    "illustration_alt": "Alur diagnosis dari gejala ke pemeriksaan, bukan daftar bypass"
   },
   {
     "title": "Preventive Maintenance",
@@ -228,6 +246,8 @@
       "Menaikkan kapasitas tanpa perhitungan"
     ],
     "correct": 1,
-    "explain": "Preventive maintenance bertujuan mencegah kegagalan dan mempertahankan performa peralatan."
+    "explain": "Preventive maintenance bertujuan mencegah kegagalan dan mempertahankan performa peralatan.",
+    "illustration": "illustrations/10-maintenance.svg",
+    "illustration_alt": "Urutan inspeksi umum; interval dan batas penerimaan mengikuti manual"
   }
 ]

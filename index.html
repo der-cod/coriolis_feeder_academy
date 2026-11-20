@@ -19,7 +19,7 @@
 <main class="container">
   <section class="hero">
     <div class="hero-copy">
-      <span class="eyebrow">LEARNING ACADEMY · V1.0</span>
+      <span class="eyebrow">LEARNING ACADEMY · V1.1</span>
       <h1>Pelajari Coriolis Feeder dari dasar sampai troubleshooting.</h1>
       <p>Materi bertahap untuk memahami pulverized coal feeding, pengukuran mass flow, sistem pneumatic, electrical, DISOCONT, PLC/DCS, kalibrasi, dan preventive maintenance.</p>
       <div class="hero-tags"><span>10 modul</span><span>Quiz per modul</span><span>Offline-ready</span></div>
@@ -45,6 +45,18 @@
       <h2 id="moduleTitle">System Overview</h2>
       <h3>Tujuan pembelajaran</h3><p id="moduleGoal"></p>
       <div class="lesson-box"><h3>Materi teknis</h3><p id="moduleLesson"></p></div>
+      <section class="illustration-panel" aria-label="Ilustrasi materi">
+        <div class="illustration-heading"><div><span class="eyebrow">VISUAL LEARNING</span><h3>Ilustrasi teknis</h3></div><span class="zoom-hint">Ketuk gambar untuk memperbesar</span></div>
+        <button type="button" id="zoomIllustration" class="illustration-button" aria-label="Perbesar ilustrasi">
+          <img id="moduleIllustration" src="illustrations/01-system-overview.svg" alt="Ilustrasi sistem feeder">
+        </button>
+        <p id="illustrationCaption" class="illustration-caption">Ilustrasi konsep pembelajaran.</p>
+      </section>
+      <div id="imageModal" class="image-modal hidden" role="dialog" aria-modal="true" aria-label="Perbesar ilustrasi">
+        <button type="button" id="closeImageModal" class="modal-close" aria-label="Tutup">×</button>
+        <img id="modalIllustration" alt="">
+        <p id="modalCaption"></p>
+      </div>
       <h3>Pokok pembahasan</h3><ul id="pointList" class="point-list"></ul>
       <div class="field-box"><div class="field-icon">⌁</div><div><b>Praktik lapangan</b><p id="fieldTask"></p></div></div>
       <section class="quiz">
@@ -69,7 +81,7 @@
     </div>
     <button id="resetBtn" class="text-button">Reset seluruh progress</button>
   </section>
-  <footer>Versi 1.0 · Aplikasi belajar mandiri · Progress disimpan pada perangkat ini.</footer>
+  <footer>Versi 1.1 · Aplikasi belajar mandiri · Progress disimpan pada perangkat ini.</footer>
 </main>
 <script src="app.js"></script>
 </body>

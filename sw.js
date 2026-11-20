@@ -1,5 +1,5 @@
-const CACHE="coriolis-academy-v1";
-const ASSETS=["./","./index.html","./styles.css","./app.js","./modules.json","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png"];
+const CACHE="coriolis-academy-v1-1";
+const ASSETS=["./","./index.html","./styles.css","./app.js","./modules.json","./illustrations/01-system-overview.svg","./illustrations/02-mechanical.svg","./illustrations/03-coriolis.svg","./illustrations/04-pneumatic.svg","./illustrations/05-electrical.svg","./illustrations/06-disocont.svg","./illustrations/07-plc-dcs.svg","./illustrations/08-calibration.svg","./illustrations/09-troubleshooting.svg","./illustrations/10-maintenance.svg","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png"];
 self.addEventListener("install",event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)));self.skipWaiting()});
 self.addEventListener("activate",event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));self.clients.claim()});
 self.addEventListener("fetch",event=>{if(event.request.method!=="GET")return;event.respondWith(caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{const copy=response.clone();if(new URL(event.request.url).origin===location.origin)caches.open(CACHE).then(cache=>cache.put(event.request,copy));return response}).catch(()=>caches.match("./index.html"))))});
