@@ -4,3 +4,15 @@
 @media(max-width:800px){.hero{padding:28px;min-height:0}.hero-art{transform:scale(.8);margin-right:-20px}.layout{grid-template-columns:1fr}.sidebar{position:static}.module-nav{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.stat:first-child{grid-column:span 2}.lesson-panel{padding:22px}.reference-grid{grid-template-columns:1fr}}
 @media(max-width:520px){.container{padding:16px 13px 32px}.topbar{padding:0 14px;height:64px}.brand strong{font-size:13px}.brand small{font-size:10px}.hero{padding:24px 20px}.hero-art{display:none}.hero h1{font-size:29px}.stats{gap:8px;margin:12px 0 16px}.stat{padding:12px}.stat strong{font-size:20px}.module-nav{grid-template-columns:1fr 1fr}.module-link{font-size:11px;padding:8px 5px}.sidebar{padding:13px}.lesson-panel{padding:18px 15px}.lesson-panel h2{font-size:24px}.lesson-actions{gap:8px}.complete-label{order:3;width:100%;margin:5px 0}.lesson-actions button{flex:1}.reference{padding:17px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+.illustration-panel{margin:18px 0 20px;border:1px solid var(--line);border-radius:15px;padding:15px;background:#fbfdfb}
+.illustration-heading{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:10px}
+.illustration-heading h3{margin:3px 0 0}
+.zoom-hint,.illustration-caption{font-size:11px;color:var(--muted)}
+.illustration-button{display:block;width:100%;padding:0;border:1px solid #dce7e2;border-radius:12px;overflow:hidden;background:#edf6f2;cursor:zoom-in}
+.illustration-button img{display:block;width:100%;height:auto}
+.illustration-caption{margin:8px 2px 0}
+.image-modal{position:fixed;inset:0;background:rgba(10,25,22,.92);z-index:20;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+.image-modal img{max-width:min(1200px,96vw);max-height:78vh;width:100%;height:auto;background:white;border-radius:12px}
+.image-modal p{color:white;font-size:13px;text-align:center}
+.modal-close{position:absolute;right:20px;top:14px;border:0;border-radius:50%;width:42px;height:42px;background:white;color:#123c36;font-size:28px;cursor:pointer}
+@media(max-width:520px){.illustration-panel{padding:11px}.illustration-heading{align-items:start;flex-direction:column;gap:3px}.image-modal{padding:12px}}
